@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>You're Officially In!</title>
+</head>
+<body style="margin:0; padding:0; background:#f4f4f4; font-family:Arial, sans-serif;">
+  <table align="center" width="600" style="border-collapse:collapse; margin:20px auto; background:#fff; border-radius:8px;">
+    <!-- Banner -->
+    <tr>
+      <td>
+        <img src="cid:invite_image" alt="Thank You Banner" width="600" style="border-radius:8px 8px 0 0;">
+      </td>
+    </tr>
+
+    <!-- Content -->
+    <tr>
+      <td style="padding:20px;">
+        <h2 style="color:#333; margin-bottom:10px; font-weight:normal;">
+          Hey <strong>{{ user_name }}</strong>! 🎉
+        </h2>
+        <p style="color:#555; margin:0 0 15px;">
+          Your registration for <strong>{{ event_name }}</strong> on <strong>{{ event_date }}</strong> at
+          <strong>{{ event_location }}</strong> is confirmed.
+        </p>
+        <p style="color:#555; margin:0 0 15px;">
+          Get ready for an exciting journey full of code, creativity, and collaboration. We’re thrilled to have you!
+        </p>
+
+        <!-- What's Next -->
+        <table width="100%" style="margin:20px 0; background:#f9f9f9; border-radius:5px;">
+          <tr>
+            <td style="padding:15px;">
+              <h3 style="color:#333; margin-top:0;">What’s Next? 🔍</h3>
+              <ul style="color:#555; margin:0; padding-left:20px;">
+                <li>Block your calendar and start warming up your brain – it's coding time! 🧠⚡</li>
+                <li>
+                  <a href="{{ calendar_url }}" style="color:#007BFF; text-decoration:none;" target="_blank">
+                    📅 Add this event to your Google Calendar
+                  </a>
+                </li>
+                <li>Mobile phones won't be allowed during the event — go distraction-free and give it your best! 🚫📱</li>
+                <li>We'll be sharing important announcements, team coordination, and surprises in our <strong>WhatsApp group</strong> – so don’t miss out, join it now! 📢👥</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Buttons -->
+        <div style="text-align:center; margin-bottom:20px;">
+          <a href="{{ event_url }}" style="display:inline-block; padding:10px 20px; background:#007BFF; color:#fff; text-decoration:none; border-radius:4px; margin:5px;">
+            View Event Details
+          </a>
+          <a href="{{ instagram_url }}" style="display:inline-block; padding:10px 20px; background:#E1306C; color:#fff; text-decoration:none; border-radius:4px; margin:5px;">
+            Visit Our Instagram
+          </a>
+          <a href="{{ whatsapp_url }}" style="display:inline-block; padding:10px 20px; background:#25D366; color:#fff; text-decoration:none; border-radius:4px; margin:5px;">
+            Join WhatsApp Group
+          </a>
+        </div>
+
+        <p style="color:#555; margin:0;">
+          Let the countdown begin! ⏳<br><br>
+          Cheers,<br>
+          <strong>Team WeCode 🚀</strong>
+        </p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
