@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Your onboarding pass!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 600px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    .banner img {
+      width: 100%;
+      border-radius: 8px 8px 0 0;
+    }
+    .content {
+      padding: 20px;
+    }
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+      font-weight: normal;
+    }
+    p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+    ul {
+      color: #555;
+      padding-left: 20px;
+    }
+    .highlight {
+      padding: 15px;
+      border-radius: 5px;
+      margin: 20px 0;
+    }
+    .light-blue {
+      background: #e8f4fd;
+    }
+    .light-green {
+      background: #e6f7ea;
+    }
+    .light-yellow {
+      background: #fff8e1;
+    }
+    .button-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 4px;
+      margin: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #ffffff !important;
+    }
+    .primary-button {
+      background: #007BFF;
+    }
+    .secondary-button {
+      background: #E1306C;
+    }
+    .success-button {
+      background: #25D366;
+    }
+    .info-button {
+      background: #6c63ff;
+    }
+    .warning-button {
+      background: #ff9800;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Banner -->
+    <div class="banner">
+      <img src="cid:invite_image" alt="Hackathon Banner">
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <h2>Welcome aboard, Team — <br><strong>{{ team_name }}</strong>! time to make history! 🎉</h2>
+      <p>Your registration for <strong>{{ event_name }}</strong> on <strong>{{ event_date }}</strong> at <strong>{{ event_location }}</strong> is confirmed.</p>
+      <p>We’re excited to welcome you to this celebration of innovation, teamwork, and problem-solving.</p>
+
+      <div class="highlight light-blue">
+        <h3 style="color:#333; margin-top:0;">Before the Event:</h3>
+        <ul>
+          <li>The Theme will be revealed 24–48 hours before the event. Only research and PPT prep allowed before the hackathon.</li>
+          <li>At the registration desk, collect: Stickers, ID card, Rule book, Food coupons, and Sticky notes.</li>
+          <li>Submit: <strong>Signed consent form.</strong></li>
+          <li>Bring: Laptop, charger, multi-plug, and hotspot (as backup).</li>
+          <li>Create your Slack/Discord channel and connect all your team members so that your in-house communication across your team is smooth.</li>
+          <li>Venue: <strong style="color:#1f75fe;">HackerSquare</strong>, <strong style="color:#28a745;">StarkTower</strong>, <strong style="color:#ff9800;">PixelPod</strong>, judging at <strong style="color:#d32f2f;">Hall of Justice</strong>.</li>
+          <li>Bring your own jackets, it might be cold at night.</li>
+          <li>Fuel up for the midnight grind — make sure to stock some snacks and sips to keep you coding through the night. 🍫☕</li>
+          <li>We will click your team photo and give it to you, so you can post those later on social media, so you can flex.</li>
+            <li><strong>We have only mailed team lead, feel free to forward the mails to your other teammates, and add them to the WhatsApp group.</strong></li>
+        </ul>
+      </div>
+
+      <div class="highlight light-green">
+        <h3 style="color:#333; margin-top:0;">Team Info:</h3>
+        <ul>
+          <li>Team Name: <strong>{{ team_name }}</strong></li>
+          <li>Team Lead: <strong>{{ lead_name }}</strong></li>
+          <li>Allocated Room No: <strong>{{ room_number }}</strong></li>
+        </ul>
+      </div>
+
+      <div class="highlight light-yellow">
+        <h3 style="color:#333; margin-top:0;">Important Rules:</h3>
+        <ul>
+          <li>Event will start at <strong>9AM, 22April</strong>, make sure to be present before ahead to avoid disqualification.</li>
+          <li>Code must be written during the hackathon only.</li>
+          <li>Use of open-source libraries is allowed with proper credits adding in README.md file.</li>
+          <li>Final submission must include source code, presentation, and demo (if applicable).</li>
+          <li>All teams must push their solution at the end of the hackathon to a github repo.</li>
+          <li>Misconduct, plagiarism, or any form of cheating will result in disqualification.</li>
+          <li>Judges' decision will be final and binding.</li>
+        </ul>
+      </div>
+
+      <div class="button-container">
+        <a href="{{ event_url }}" class="button primary-button">View Event Details</a>
+        <a href="{{ instagram_url }}" class="button secondary-button">Visit Our Instagram</a>
+        <a href="{{ whatsapp_url }}" class="button success-button">Join Hack-a-thon WhatsApp Group</a>
+        <a href="https://docs.google.com/document/d/1yGacdzOPH1g-jMW8x_oxVu9Tw9OUNxycLlYZQB5osRE/edit?usp=sharing" class="button info-button" target="_blank">Judging Criteria</a>
+        <a href="https://docs.google.com/document/d/18X0Nb4xM_4oMdb_obdoGNMjKhAQUKi4QS93zKcQpXgs/edit?usp=sharing" class="button warning-button" target="_blank">Consent Form</a>
+      </div>
+
+      <div style="color:#555; margin:20px 0; text-align:center;">
+        <h3>⏳ Countdown to Hackathon :</h3>
+        <p id="countdown" style="font-size:18px; font-weight:bold;"></p>
+        <p style="margin-top:20px;">Regards,<br><strong>Team WeCode</strong></p>
+      </div>
+
+      <script>
+        const countdownDate = new Date("April 22, 2025 10:00:00").getTime();
+        const countdownElement = document.getElementById("countdown");
+
+        const x = setInterval(function() {
+          const now = new Date().getTime();
+          const distance = countdownDate - now;
+
+          if (distance < 0) {
+            clearInterval(x);
+            countdownElement.innerHTML = "The hackathon has started!";
+            return;
+          }
+
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }, 1000);
+      </script>
+    </div>
+  </div>
+</body>
+</html>

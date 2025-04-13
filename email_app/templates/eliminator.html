@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grafest - Build For GEHU'25</title>
+
+  <style>
+    /* Reset & Base Styles */
+    * {box-sizing: border-box; margin: 0; padding: 0;}
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      padding: 10px;
+    }
+    a {color: #0066cc; text-decoration: none;}
+    a:hover {text-decoration: underline;}
+
+    /* Container */
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+
+    /* Banner */
+    .banner img {
+      width: 100%;
+      display: block;
+      border-bottom: 4px solid #ccc;
+    }
+
+    /* Content */
+    .content {
+      padding: 20px;
+    }
+    h1, h2, h3, h4 {
+      margin-bottom: 10px;
+    }
+    h1 {
+      color: #1a237e;
+      text-align: center;
+      margin-top: 20px;
+      letter-spacing: 1px;
+      font-family: 'Great Vibes', cursive, sans-serif;
+    }
+
+    h2 {
+      color: #0d47a1;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    p {margin-bottom: 15px;}
+    ul {margin-left: 20px; margin-bottom: 15px;}
+    li {margin-bottom: 10px;}
+
+    /* Sections */
+    .section {
+      margin-bottom: 30px;
+    }
+    .highlight {
+      background: #e3f2fd;
+      padding: 15px;
+      border-radius: 5px;
+      margin: 20px 0;
+    }
+    .junior-highlight {
+      background: #fff8dc;
+      border: 1px solid #ffd700;
+      box-shadow: 0 2px 5px rgba(255, 215, 0, 0.1);
+      padding: 15px;
+      border-radius: 5px;
+      margin: 20px 0;
+    }
+    .highlight-alt {
+      background: #fce4ec;
+    }
+    .senior-highlight {
+      background: #e6ffe6;
+      border: 1px solid #00cc66;
+      box-shadow: 0 2px 5px rgba(0, 204, 102, 0.1);
+      padding: 15px;
+      border-radius: 5px;
+      margin: 20px 0;
+    }
+    .note {
+      background: #fff7e6;
+      padding: 15px;
+      border: 1px solid #f0b400;
+      border-radius: 5px;
+      text-align: center;
+      font-style: italic;
+    }
+    .note-critical {
+      background: #ffe3e3;
+      border: 1px solid #ff4d4d;
+    }
+    .cta {
+      background: #d0f0c0;
+      padding: 15px;
+      border: 1px solid #a2d5ab;
+      border-radius: 5px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Responsive */
+    @media only screen and (max-width:600px) {
+      .container {margin: 10px;}
+      .content {padding: 15px;}
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 15px;
+      background: #f1f1f1;
+      font-size: 0.9em;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Banner -->
+    <div class="banner">
+      <img src="cid:invite_image" alt="Hackathon Banner">
+    </div><br>
+  <div class="note note-critical">
+          <h1>Round - I</h1>
+        <p><span style="color: #b22222;">😈 So you thought it was just a sample problem? Well,
+          here’s your first nuclear bomb 💣 — that very “sample” is now your official eliminator round!
+          Only the sharpest <strong>40 out of 60 will survive</strong> this twist.
+        Time to prove you haven't ignored — you were building. 😈</span>
+            <br><br>Let the real challenge begin.</p>
+      </div><br>
+    <!-- Main Content -->
+    <div class="note">
+      <h1>Main Branch Timelines</h1>
+          <p>
+            💡 <strong>12 Apr</strong> — Sample problem goes live.<br>
+            📦 <strong>17 Apr</strong> — Submit PDF + npm/GitHub.<br>
+            🎯 <strong>19 Apr</strong> — Top 40 teams announced.<br>
+            🔥 <strong>22 Apr</strong> — Offline Hackathon begins.<br>
+            🏆 <strong>23 Apr</strong> — Prize distribution at OAT.<br>
+
+          </p>
+    </div>
+
+      <!-- GSOC Proposal Inspiration -->
+      <div class="section highlight">
+        <h1>GSOC Proposal Inspiration</h1>
+        <p>
+        Inspired by Google Summer of Code, this is more than a submission — it’s your first real proposal.
+        Craft it like you’re applying for GSoC itself. Clear intent, strong structure, bold vision.
+        Because next time, it might not just be a college challenge — it could be the real deal. 🚀
+        </p>
+      </div>
+
+      <!-- Junior Category: Classic Challenge -->
+      <div class="section junior-highlight">
+        <h1>Junior Category: Classic Challenge – Snake & Ladder</h1>
+        <h3>Overview</h3>
+        <p>
+          Reinvent the timeless board game with a modern twist. This challenge tests your ability to innovate within established boundaries.
+        </p>
+        <h3>Key Requirements</h3>
+        <ul>
+          <li>Create a dynamic, interactive 10x10 grid board with clearly numbered cells.</li>
+          <li>Integrate 5 snakes and 5 ladders at strategically chosen positions to influence game dynamics.</li>
+          <li>Develop a fair and randomized dice-rolling mechanism to determine player movement.</li>
+          <li>Implement comprehensive game logic that captures the essence of snakes and ladders – from setbacks to advances.</li>
+          <li>Design an intuitive UI using clean HTML/CSS, ensuring compatibility and responsiveness on mobile devices.</li>
+        </ul>
+        <h3>Additional Guidelines</h3>
+        <ul>
+          <li>Focus on accessibility and user-friendly interactions.</li>
+          <li>Account for edge cases like overshooting the winning cell.</li>
+          <li>Utilize progressive enhancement for broader device support.</li>
+        </ul>
+      </div>
+
+      <!-- Senior Category: Build Your Own UI Library -->
+      <div class="section senior-highlight">
+        <h1>Senior Category: Build Your Own UI Library</h1>
+        <p>
+          Construct a groundbreaking CSS framework from the ground up—one that empowers developers to craft unique, responsive, and accessible user interfaces.
+          Your project should redefine what a UI library can be, balancing visual sophistication with functional precision.
+        </p>
+        <h3>Core Objectives</h3>
+        <ul>
+          <li>Design a fully responsive 12-column grid system that adapts seamlessly across all devices.</li>
+          <li>Develop a comprehensive suite of utility classes for spacing, typography, flex layouts, and alignment.</li>
+          <li>Create a cohesive design system including a defined color palette, spacing scale, and typography guidelines.</li>
+          <li>Use semantic class names to ensure clarity and ease of use for developers integrating your system.</li>
+          <li>Showcase your framework through a live demo site that highlights its versatility and performance.</li>
+        </ul>
+        <h3>Bonus & Additional Features</h3>
+        <ul>
+          <li>Integrate a dark mode variant to improve accessibility in low-light environments.</li>
+          <li>Build reusable, modular components that can be deployed in various projects.</li>
+          <li>Develop clear, concise documentation that explains your design choices and usage instructions.</li>
+        </ul>
+        <h3>Restrictions</h3>
+        <p>
+          Your UI library must be created entirely from scratch. Pre-built libraries like Bootstrap, Tailwind, or Bulma are strictly prohibited.
+        </p>
+      </div>
+
+      <!-- Submission & Timeline -->
+      <div class="section">
+        <h1>Submission & Timeline</h1>
+        <ul>
+          <li><strong>Submission Platform:</strong> <a href="https://forms.gle/9BZ1xnMAbMz5oQXW7" target="_blank">Google Form</a></li>
+          <li><strong>Submission Deadline:</strong> 17th April, 11:59 PM</li>
+          <li><strong>Reference Document:</strong> <a href="https://docs.google.com/document/d/14EhzC_pnlx28iT_LDPlFy8O0KcGXRsvWYr3XoiTYW7w/edit?tab=t.0" target="_blank">Challenge Brief Document</a></li>
+        </ul>
+        <p>
+          Please ensure your project is thoroughly tested on mobile devices. Late or incomplete submissions will not be considered.
+        </p>
+      </div>
+
+      <!-- Final Note -->
+      <div class="section note">
+        <p>
+          <h1>Plagiarism Warning!!!</h1>
+          We already have some of the best plagiarisms in the world, and we are looking for the best of the best. Please do not copy-paste from the internet.
+          <br><strong> Stanford MOSS, searchcode</strong> and one hidden tool that we are not disclosing as of now.
+        <br><br>
+        This is much simpler than it looks like, you need to get started, believe us when we release the solution you will be like "Ohh, this was so simple, why I didn't thought of it before".<br><br>
+        </p>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="cta">
+        <p>
+          <h1>Submitting your solution</h1>
+          Ready to make your mark? Review the full details in the <a href="https://docs.google.com/document/d/14EhzC_pnlx28iT_LDPlFy8O0KcGXRsvWYr3XoiTYW7w/edit?tab=t.0" target="_blank">Challenge Brief Document</a> and submit your entry via <a href="https://forms.gle/9BZ1xnMAbMz5oQXW7" target="_blank">this Google Form</a> before the deadline.
+          <br><br>
+          The Estimated time for an average coder to complete this is <strong>12 hours</strong> 🕒.
+          We tested this on a small squad of brave devs — and yep, they made it through in 12.
+          So don’t stress if you go over — we’re not asking you to build a rocket 🚀 (yet). Stay caffeinated and keep building ☕💻.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Regards,<br><strong>Team WeCode</strong></p>
+    </div>
+  </div>
+</body>
+</html>

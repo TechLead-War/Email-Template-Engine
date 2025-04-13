@@ -13,10 +13,8 @@ from email_engine.views import send_codecraft_invite_email
 
 # 3. User list
 users = [
-    {"user_email": "ayushkapri@gehu.ac.in", "user_name": "bca1agehu"},
-    {"user_email": "wecode.btl@geu.ac.in", "user_name": "btech1agehu"},
+    {'user_email': 'ayushkapri.richard@gmail.com', 'user_name': 'Ayush'},
 ]
-
 
 # 4. Send loop
 for user in users:

@@ -11,21 +11,15 @@ django.setup()
 from email_engine.views import send_thank_you_email
 
 
-
 # 4. Define recipient list
 users = [
-    {"user_email": "gayatrisingh9317@gmail.com", "user_name": "Gayatri Singh"},
-    {"user_email": "kartikeywariyal706@gmail.com", "user_name": "Kartikey Wariyal"},
-    {"user_email": "riyagarjola0@gmail.com", "user_name": "Riya Garjola"},
-    {"user_email": "utpalsharma110@gmail.com", "user_name": "Utpal Sharma"},
-    {"user_email": "anurag.p00000@gmail.com", "user_name": "Anurag Parmar"},
-    {"user_email": "mhifzan802@gmail.com", "user_name": "Mohd Hifzan"},
-    {"user_email": "vedantrai1819@gmail.com", "user_name": "Vedant Rai"},
-    {"user_email": "harshitapathak0123@gmail.com", "user_name": "HARSHITA PATHAK"},
-    {"user_email": "lakshitakanwal25@gmail.com", "user_name": "Lakshita Kanwal"},
-    {"user_email": "shivanshsinghchauhan048@gmail.com", "user_name": "Shivansh Singh Chauhan"},
-    {"user_email": "deepanshupathak36@gmail.com", "user_name": "Deepanshu Pathak"},
-    {"user_email": "sauravmehta631@gmail.com", "user_name": "Saurav Singh Mehta"},
+    {'user_email': 'barkharawat621@gmail.com', 'user_name': 'Shreya Rawat'},
+    {'user_email': 'bhaveshkandpal88@gmail.com', 'user_name': 'Bhavesh Kandpal'},
+    {'user_email': 'specious0027@gmail.com', 'user_name': 'Sourabh Singh'},
+    {'user_email': 'dineshdumka874@gmail.com', 'user_name': 'Dinesh Dumka'},
+    {'user_email': 'Deewasjalal@gmail.com', 'user_name': 'Deewas Singh'},
+    {'user_email': 'harshhhverma01@gmail.com', 'user_name': 'Harsh Verma'},
+    {'user_email': 'manralkartik09@gmail.com', 'user_name': 'KARTIK MANRAL'},
 ]
 
 # 5. Define event metadata
